@@ -1,6 +1,3 @@
-Maximum value
-const max = movements.reduce((acc, mov) => {
-    if (acc > mov) return acc;
-    else return mov;
-}, movements[0]);
-console.log(max);
+
+// console.log("m2 ", m2);
+// console.log("m3 ", m3);

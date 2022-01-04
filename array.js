@@ -1,3 +1,5 @@
+
+
 // let fruits = ['Apple', 'Banana', 'kiwi', 'watermelon', 'papaya', 'chicoo', 'grapes', 'df']
 // fruits.forEach((a, b, c) => {
 //     console.log(a, b, c)
@@ -31,9 +33,9 @@
 // console.log(fruits.slice(7, 4))      //- -
 
 
-let fruits = ['Apple', 'ananas', 'Avocado', 'Banana', 'kiwi', 'watermelon', 'papaya', 'chicoo', 'grapes', 'df']
-let numarray = [2, 31, 333, 223, 22, 65, 76, 44, 45, 44445, 4, 86, 43, 34, 46, 68, 12, 14, 66, 78]
-let numarray1 = [2, 31, 34, 12, 14]
+// let fruits = ['Apple', 'ananas', 'Avocado', 'Banana', 'kiwi', 'watermelon', 'papaya', 'chicoo', 'grapes', 'df']
+// let numarray = [2, 31, 333, 223, 22, 65, 76, 44, 45, 44445, 4, 86, 43, 34, 46, 68, 12, 14, 66, 78]
+// let numarray1 = [2, 31, 34, 12, 14]
 
 // console.log(numarray.includes(2));
 // console.log(fruits.includes('kiwi'));
@@ -79,51 +81,63 @@ let numarray1 = [2, 31, 34, 12, 14]
 
 // Spread syntax (...)
 const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
-// let movements_deposit = [200, 450,  3000, 70, 1300];
-// let movements_withdra = [-400,  -650, -130];
+let movements_deposit = [200, 450, 3000, 70, 1300];
+let movements_withdra = [-400, -650, -130];
 // const amt = [1200,950]
 
-//  movements_deposit = [...movements_withdra, ...movements_deposit  ]
+// let movements = [...movements_deposit, ...movements_withdra]
+// let newarray = movements
+// console.log(movements)
 
-// console.log(newArray);
-// console.log(newArray.sort());
+// function sum(x, y, z, a) {
+//     console.log(x, " - ", y, " - ", z, " - ", a);
+//     // return x + y;
+// }
+
+// const numbers = [1, 2, 3];
+// sum(200, ...numbers)
 
 
+// let numberStore = [0, 1, 2];
+// let newNumber = 12;
+// numberStore = [23, 43, 54, ...numberStore, newNumber];
+// console.log(numberStore)
+
+// console.log(sum(...numbers));
 
 // Maximum value
-const max = movements.reduce((acc, mov) => {
-    if (acc > mov) return acc;
-    else return mov;
-}, movements[0]);
-console.log(max);
+// const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+// const max = movements.reduce((acc, mov) => {
+//     if (acc > mov) return acc;
+//     else return mov;
+// }, movements[0]);
+// console.log(max);
 
-// 9/12
 // array destructuring
 
-// let x=10,y=20;
-// [x,y]=[y,x];
-//  console.log("x : ",x);
-//  console.log("y : ",y);
+// let x = 10, y = 20;
+// [x, y] = [y, x];
+// console.log("x : ", x);
+// console.log("y : ", y);
 
-//  function result(m1,m2,m3)
-// {
-//   return[
-//     m1+m2+m3,
-//     (m1+m2+m3)/3,
-//   ]
-// }
-// let [total,percentage] = result(43,54,65);
-// console.log(total," - ",percentage);
+function result(m1, m2, m3) {
+    return [
+        m1 + m2 + m3,
+        (m1 + m2 + m3) / 3,
+    ]
+}
+// console.log(result(43, 54, 65))
+// let [total, percentage] = result(43, 54, 65);
+// console.log(total, " - ", percentage);
 
-// function getMarks()
-// {
-//   return [34,54,65,54,65]
-// }
-//  let marks = getMarks();
-// //  console.log(marks);
+function getMarks() {
+    return [34, 54, 65, 54, 65]
+}
+// let marks = getMarks();
+// console.log(marks);
 
-//  let [m1,m2,m3,...m4] = getMarks();
-// console.log("m1 ",m1);
-// console.log("m2 ",m2);
-// console.log("m3 ",m3);
-// console.log("m4 ",m4);
+let [...m4] = getMarks();
+// console.log("m1 ", m1);
+// console.log("m2 ", m2);
+// console.log("m3 ", m3);
+console.log("m4 ", m4);
