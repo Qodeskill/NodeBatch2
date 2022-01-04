@@ -99,21 +99,21 @@
 // const promise = new Promise(function (resolve, reject) { })
 // console.log(promise)
 
-var promise = new Promise(function (resolve, reject) {
-    const x = "google";
-    const y = "google";
-    if (x != y) {
-        resolve();
-    } else {
-        reject();
-    }
-});
-promise
-    .then(function () {
-        console.log("Success, You are a developer");
-    })
-    .catch(function () {
-        console.log("Some error has occured");
-    });
+// var promise = new Promise(function (resolve, reject) {
+//     const x = "google";
+//     const y = "google";
+//     if (x != y) {
+//         resolve();
+//     } else {
+//         reject();
+//     }
+// });
+// promise
+//     .then(function () {
+//         console.log("Success, You are a developer");
+//     })
+//     .catch(function () {
+//         console.log("Some error has occured");
+//     });
 
-console.log(promise)
+// console.log(promise)

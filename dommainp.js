@@ -111,9 +111,9 @@
 // console.log(evenOrOdd(10));
 
 // //normal function
-var hello = (val1, val2) => "Hello World! " + (val1 + val2)
+// var hello = (val1, val2) => "Hello World! " + (val1 + val2)
 
-console.log(hello(20, 21))
+// console.log(hello(20, 21))
 
 // var hello = function () {
 //     return "Hello World!";
