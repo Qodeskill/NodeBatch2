@@ -80,9 +80,9 @@
 
 
 // Spread syntax (...)
-const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
-let movements_deposit = [200, 450, 3000, 70, 1300];
-let movements_withdra = [-400, -650, -130];
+// const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+// let movements_deposit = [200, 450, 3000, 70, 1300];
+// let movements_withdra = [-400, -650, -130];
 // const amt = [1200,950]
 
 // let movements = [...movements_deposit, ...movements_withdra]
@@ -120,24 +120,84 @@ let movements_withdra = [-400, -650, -130];
 // console.log("x : ", x);
 // console.log("y : ", y);
 
-function result(m1, m2, m3) {
-    return [
-        m1 + m2 + m3,
-        (m1 + m2 + m3) / 3,
-    ]
-}
+// function result(m1, m2, m3) {
+//     return [
+//         m1 + m2 + m3,
+//         (m1 + m2 + m3) / 3,
+//     ]
+// }
 // console.log(result(43, 54, 65))
 // let [total, percentage] = result(43, 54, 65);
 // console.log(total, " - ", percentage);
 
-function getMarks() {
-    return [34, 54, 65, 54, 65]
-}
+// function getMarks() {
+//     return [34, 54, 65, 54, 65]
+// }
 // let marks = getMarks();
 // console.log(marks);
 
-let [...m4] = getMarks();
+// let [...m4] = getMarks();
 // console.log("m1 ", m1);
 // console.log("m2 ", m2);
 // console.log("m3 ", m3);
-console.log("m4 ", m4);
+// console.log("m4 ", m4);
+
+//// 5/01/22
+
+// Looping Arrays: forEach
+// const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+
+// for (i of movements)
+// //     console.log(i);
+
+// for (const [i, movement] of movements.entries())
+//     console.log(i + "  - " + movement);
+
+// for (const [i, movement] of movements.entries()) {
+
+//     if (movement > 0) {
+//         console.log(`Movement ${i + 1}: You deposited ${movement}`);
+//     } else {
+//         console.log(`Movement ${i + 1}: You withdrew ${Math.abs(movement)}`);
+//     }
+// }
+
+// console.log('---- FOREACH ----');
+// movements.forEach(function (mov, i, arr) {
+//     if (mov > 0) {
+//         console.log(`Movement ${i + 1}: You deposited ${mov}`);
+//     } else {
+//         console.log(`Movement ${i + 1}: You withdrew ${Math.abs(mov)}`);
+//     }
+// });
+
+
+
+// ----------------------------------------------------------------------------------------
+
+
+// forEach With Maps and Sets
+// Map
+// const movements = [200, 450, 400, 3000, 650, 130, 70, 1300];
+// const eurToUsd = 1.1;
+// const movementsUSD = movements.map(function (mov) {
+//     return mov * eurToUsd;
+// });
+// console.log(movements);
+// console.log(movementsUSD);
+
+// const movementsUSD = movements.map(mov => mov * eurToUsd);
+// console.log(movements);
+// console.log(movementsUSD);
+
+// const movementsUSDfor = [];
+// for (const mov of movements)
+//     movementsUSDfor.push(mov * eurToUsd);
+// console.log(movementsUSDfor);
+
+// const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+// const movementsDescriptions = movements.map(
+//     (mov, i) => `Movement ${i + 1}: You ${mov > 0 ? 'deposited' : 'withdrew'} ${Math.abs(mov)}`
+// );
+// console.log(movementsDescriptions);
+
