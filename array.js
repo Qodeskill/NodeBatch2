@@ -201,3 +201,109 @@
 // );
 // console.log(movementsDescriptions);
 
+// const arr1 = [0, 1, 2, [3, 4, 5, [6, 7]]];
+
+// console.log(arr1.flat(-1));
+// expected output: [0, 1, 2, 3, 4]
+
+// const arr2 = [0, 1, 2, [[[3, 4]]]];
+
+// console.log(arr2.flat(2));
+// expected output: [0, 1, 2, [3, 4]]
+
+
+// const birthday = new Date('June 13, 08 04:20');
+// // console.log(birthday.getMonth());
+// let date = new Date();
+// console.log(date);
+
+
+// const str1 = 'skill qode';
+
+// console.log(str1.padEnd(-3, '-'));
+// console.log(str1.padStart(-3, '-'));
+
+
+// const str2 = '200';
+
+// console.log(str2.padEnd(5));
+
+// const str = 'skill qode the programing lab';
+// console.log(str.slice(15, 25));
+// console.log(str.slice(-14, 25));
+// console.log(str.slice(11, -15));
+
+///------------------------------------------------------------------------------
+//// Object 10/01/22
+///------------------------------------------------------------------------------
+// let o1 = Object();
+// console.log(o1);
+// console.log(typeof (o1));
+// var a
+// var b = ''
+// console.log(a)//undefine
+// console.log(b)//null
+
+// let o2 = new Object(undefined);
+// console.log(o2);
+// let o3 = new Object(null);
+// console.log(o3);
+
+// let car = new Object();
+// car.brand = "maruti";
+// car.color = "black";
+// car.fueltype = "CNG";
+// console.log(car);
+// { brand: 'maruti', color: 'black', fueltype: 'CNG' }
+
+// const newcar = {
+//     brand: 'maruti',
+//     color: 'black',
+//     fueltype: 'CNG'
+// }
+// console.log(newcar['brand']);
+// console.log(newcar.brand);
+// newcar['seat'] = '4';
+// const newcar = {
+//     brand: 'maruti',
+//     color: 'black',
+//     fueltype: 'CNG',
+//     type: {
+//         small: 'hatchback',
+//         med: 'seadan',
+//         larg: 'suv'
+//     }
+// }
+
+// console.log(newcar.type.larg);
+// console.log(newcar['type']['larg']);
+
+// function Bike(make, model, year, owner) {
+//     this.make = make;
+//     this.model = model;
+//     this.year = year;
+//     this.owner = owner;
+//     this.displayCar = displayCar;
+//   }
+
+//   console.log(Bike);
+
+// var o = {
+//     a: 7,
+//     get b() {
+//       return this.a + 1;
+//     },
+//     set c(x) {
+//       this.a = x / 2;
+//     }
+//   };
+// console.log(o)  ;
+
+//    console.log(o.b); 
+//    o.c = 50;         
+//    console.log(o.a); 
+//   console.log(o.b); 
+
+
+
+
