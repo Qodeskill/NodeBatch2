@@ -305,5 +305,57 @@
 //   console.log(o.b); 
 
 
+// 11/01/22
+//---------------------------------------------------------------------------
+// let person = {
+//     firstName: 'John',
+//     lastName: 'Doe',
+//     middleName: 'C.',
+//     currentAge: 28
+// };
 
+// let { firstName, lastName, middleName, currentAge: age = 18 } = person;
 
+// console.log(middleName); // 'C.'
+// console.log(age); // 28
+// let b = person;
+
+// console.log(firstName)
+// console.log(typeof (firstName))
+// console.log(b)
+// function getPerson() {
+//     return null;
+// }
+// let { firstName, lastName } = getPerson();
+// let { firstName, lastName } = getPerson() || {};
+
+// console.log(firstName, lastName);
+
+// let employee = {
+//     id: 1001,
+//     name: {
+//         firstName: 'John',
+//         lastName: 'Doe',
+//         age: '28',
+//         address: {
+//             city: 'Surat',
+//             state: 'Gujarat',
+//             country: 'india'
+//         }
+//     }
+// };
+
+// let {
+//     name: {
+//         firstName,
+//         lastName
+//     }
+// } = employee;
+
+// let { lastName, firstName: name, ...rest } = employee.name;
+// let { city, state } = employee.name.address
+// console.log(city)
+// // console.log(state)
+// console.log(typeof (rest))
+// console.log(name); // John
+// console.log(lastName); // Doe
