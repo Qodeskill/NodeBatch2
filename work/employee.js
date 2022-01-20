@@ -6,12 +6,9 @@ var employee = {
   salary: 3000,
   workExperienceYears: 4,
 
-
   getFullName: function () {
     return `${this.firstName} ${this.lastName}`;
   },
-
-
   promote: function () {
     var isEligibleForPromotion;
     if (this.designation == "Clerk") {
@@ -24,7 +21,6 @@ var employee = {
         isEligibleForPromotion = false;
       }
     }
-
     //Asst. Manager to Manager
     else if (this.designation == "Asst. Manager") {
       if (this.workExperienceYears >= 5) {
@@ -36,18 +32,17 @@ var employee = {
         this.isEligibleForPromotion = false;
       }
     }
-
     return isEligibleForPromotion;
   }
 };
 
-//console.log(employee);
+// console.log(employee);
 
-console.log(employee.firstName);
-console.log(employee.lastName);
-console.log(employee.designation);
-console.log(employee.salary);
-console.log(employee.workExperienceYears);
+// console.log(employee.firstName);
+// console.log(employee.lastName);
+// console.log(employee.designation);
+// console.log(employee.salary);
+// console.log(employee.workExperienceYears);
 
 console.log(employee.getFullName());
 if (employee.promote() == true) {
